@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+    # golang のサービス
+    api:
+        build:
+          context: ./api
+          dockerfile: Dockerfile
+        ports:
+            - "8080:8080"
+        volumes:
+          - D:\\Users\\kakomon-go\\api:/go/src/
+        container_name: beego-container
+        depends_on:
+            - db
+    # mysql のサービス
+    db:
+        image: mysql:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: golang
+            MYSQL_USER: golang # 使わないけど一応記述
+            MYSQL_PASSWORD: golang # 使わないけど一応記述
+            MYSQL_DATABASE: golang # 使わないけど一応記述
+        ports:
+          - 3306:3306
+        volumes:
+          - D:\\Users\\kakomon-go\\db:/data/db
+        container_name: mysql-container
