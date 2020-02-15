@@ -1,7 +1,7 @@
 ## MEMO
 
 現在はブラウザから
-http://localhost:3306/
+http://localhost:8080/
 へアクセス
 
 
