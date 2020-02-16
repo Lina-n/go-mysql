@@ -11,9 +11,9 @@ http://localhost:8080/
 ここはapi,github.comのファイルに分かれている
 #### api
 kakomonListとswaggerのファイルに分かれている<br>
-kakomonList → main.goなどのGOファイルが置かれている
-swagger → GUI。RESTful APIのドキュメントや、サーバ、クライアントコード、エディタ、またそれらを扱うための仕様などを提供するフレームワーク
-※RESTful API(REST API)は、Webシステムを外部から利用するためのプログラムの呼び出し規約(API)の種類の一つのこと
+kakomonList → main.goなどのGOファイルが置かれている<br>
+swagger → GUI。RESTful APIのドキュメントや、サーバ、クライアントコード、エディタ、またそれらを扱うための仕様などを提供するフレームワーク<br>
+※RESTful API(REST API)は、Webシステムを外部から利用するためのプログラムの呼び出し規約(API)の種類の一つのこと<br>
 
 ### db
 dbが作られていないため、ここのファイルは空で、まだ反映されていない（2020/2/14）
